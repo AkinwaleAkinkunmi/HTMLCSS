@@ -1,0 +1,254 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Circular Spotify Text',sans-serif;
+}
+
+nav{
+    background-color: rgb(18, 18, 18);
+    width: 100%;
+    padding: 20px 40px;
+}
+
+img{
+    width: 138px
+}
+
+.sectionOne{
+    background-color: rgb(18, 18, 18);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.1) 0%, rgb(0, 0, 0) 100%);
+    padding: 32px 20%;
+    display: flex;
+    justify-content: center;
+}
+
+.loginbox{
+    background-color: rgb(18, 18, 18);
+    width: 90%;
+    padding: 32px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+
+
+.loginbox li{
+    list-style-type: none;
+    width: 100%;
+}
+
+.loginbox h1{
+    color: white; 
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    margin: 48px 0px;
+}
+
+.loginbox button{
+    background-color: rgb(18, 18, 18);
+    border: 1px solid rgb(114, 114, 114);
+    border-radius: 50px;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 8px 50px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 324px;
+}
+
+.loginbox button:hover{
+    border-color: white;
+    cursor: pointer
+}
+
+.loginbox button span{
+    padding-top: 4px;
+    padding-left: 4px;
+    margin: 5px 0px;
+    width: 100%;
+}
+
+.loginbox button img{
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    left: 31px;
+}
+
+.sectionOne a{
+    text-decoration: none;
+    cursor: none;
+}
+
+hr{
+    margin: 32px 100px;
+    border-top: 0.25px solid rgb(41, 41, 41) ;
+    border-right: none;
+    border-left: none;
+    border-bottom: none;
+    height: 0.5px;
+    width: 70%;
+}
+
+.sectionOne .userinfo{
+    padding: 8px 0px;
+    width: 324px;
+}
+
+.userinfo span{
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+}
+
+.userinfo input{
+    padding: 12px 16px;
+    padding-top: 16px;
+    width: 100%;
+    background-color: rgb(18, 18, 18);
+    border: 1px solid rgb(114, 114, 114);
+    border-radius: 3px;  
+    margin-top: 8px;
+    caret-color: white;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;}
+
+.userinfo input:hover{
+    border-color: white;
+}
+
+
+input::placeholder{
+    color: rgb(114, 114, 114);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.switchcontainer{
+    display: flex;
+    gap: 12px;
+    width: 324px;
+    align-items: center;
+    padding:4px 0px;
+} 
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 16px;
+}
+
+.switch input{
+    display: none;
+}
+
+.slider {
+position: absolute;
+cursor: pointer;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: rgb(114, 114, 114);
+transition: 0.1s;
+border-radius: 34px;
+}
+  
+.slider:before {
+position: absolute;
+content: "";
+height: 12px;
+width: 12px;
+left: 2px;
+bottom: 2px;
+background-color: rgb(18, 18, 18);
+transition: 0.1s;
+border-radius: 50%;
+}
+
+input:checked + .slider {
+background-color: rgb(30, 215, 96);
+
+}
+
+input:checked + .slider:before {
+transform: translateX(14px);
+}
+
+.switchcontainer p{
+    color: white;
+    font-size: 11px;
+    font-weight: 100;
+    letter-spacing: .4px;
+    padding-top: 3px;
+}
+
+.Login{
+    padding: 32px 0px;
+}
+
+.Login button{
+    background-color: rgb(30, 215, 96);
+    color: black;
+    padding: 13px 32px;
+    padding-top: 16px;
+    border: none;
+    width: 324px;
+}
+
+.Login button:hover{
+    transform: scale(1.03);
+}
+
+.forgotpassword p{
+    color: white;
+    text-decoration: underline;
+}
+
+.noaccount{
+    display: inline-flex;
+    padding: 36px 0px;
+}
+
+.noaccount span{
+    color: rgb(167, 167, 167);
+    margin-right: 8px;
+}
+
+.noaccount a{
+    color: white;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+.noaccount a:hover{
+    color:rgb(30, 215, 96);
+    cursor: pointer
+}
+
+footer{
+    background-color: rgb(18, 18, 18);
+    width: 100%;
+    padding: 32px;
+}
+
+footer p{
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    color: rgb(167, 167, 167);
+}
+
+footer a{
+    color: rgb(167, 167, 167);
+}

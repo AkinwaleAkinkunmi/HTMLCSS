@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="icon" href="spotify_icon-removebg-preview.png">
+    <link rel="stylesheet" href="home.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9c0ae6486a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="bodydivcontainer" style="height: fit-content; width: fit-content;">
+        <div class="bodydiv">
+            <nav class="sidenavbar">
+                <ul>
+                    <li>
+                        <a href="" class="homeicon">
+                            <i class="fa-solid fa-house"></i>
+                            <p>Home</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="searchicon">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <p>Search</p>
+                        </a>
+                    </li>
+                </ul>
+        
+                <div class="sidenavbottom">
+                    <header>
+                        <div class="headerfirst">
+                            <button >
+                                <i class="fa-solid fa-layer-group"></i>
+                                <p>Your Library</p>
+                                <span id="hiddendetail">Collapse Your Library</span>
+                            </button>
+    
+                            <span class="plus">
+                                <span id="hiddendetail2">Create a playlist or folder</span>
+                                <i class="fa-solid fa-plus"></i>
+                            </span>
+                            
+                            <span class="arrow">
+                                <span id="hiddendetail3">Show more</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </span>
+                        </div>
+                        <div class="headersecond">
+                            <button>
+                                <p>Artists</p>
+                            </button>
+                        </div>
+                    </header>
+    
+                    <section class="playlistartist">
+                        <div class="searchrecents">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <button>
+                                <p>Recents</p>
+                                <i class="fa-solid fa-list"></i>
+                            </button>
+                        </div>
+    
+                        <div class="overflowartists">
+                            <div class="likedsongscontainer">
+                                <img src="liked-songs-640.png" alt="liked songs">
+                                <div style="margin-top: 4px;">
+                                    <p class="libname">Liked Songs</p>
+                                    <p class="libdetails">
+                                        <i class="fa-solid fa-thumbtack"></i>
+                                        Playlist . 1 song
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="artistcontainer">
+                                <img src="nicky minaj.jpeg" alt="Nicky Minaj">
+                                <div>
+                                    <p class="artistname">Nicky Minaj</p>
+                                    <p class="artistdecription">Artist</p>
+                                </div>
+                            </div>
+    
+                            <div class="artistcontainer">
+                                <img src="Asake.jpeg" alt="Asake">
+                                <div>
+                                    <p class="artistname">Asake</p>
+                                    <p class="artistdecription">Artist</p>
+                                </div>
+                            </div>
+    
+                            <div class="artistcontainer">
+                                <img src="Big Sean.jpeg" alt="Big Sean">
+                                <div>
+                                    <p class="artistname">Big Sean</p>
+                                    <p class="artistdecription">Artist</p>
+                                </div>
+                            </div>
+    
+                            <div class="artistcontainer">
+                                <img src="Arya Star.jpeg" alt="Arya Starr">
+                                <div>
+                                    <p class="artistname">Arya Starr</p>
+                                    <p class="artistdecription">Artist</p>
+                                </div>
+                            </div>
+    
+                            <div class="artistcontainer">
+                                <img src="Bnxn.jpeg" alt="Bnxn">
+                                <div>
+                                    <p class="artistname">Bnxn</p>
+                                    <p class="artistdecription">Artist</p>
+                                </div>
+                            </div> 
+                            
+                            <div class="artistcontainer">
+                                <img src="Davido.jpeg" alt="Davido">
+                                <div>
+                                    <p class="artistname">Davido</p>
+                                    <p class="artistdecription">Artist</p>
+                                </div>
+                            </div>
+    
+                            <div class="artistcontainer">
+                                <img src="Fireboy.jpeg" alt="Fireboy">
+                                <div>
+                                    <p class="artistname">Fireboy</p>
+                                    <p class="artistdecription">Artist</p>
+                                </div>
+                            </div>
+    
+                            <div class="artistcontainer">
+                                <img src="Olamide.jpeg" alt="Olamide">
+                                <div>
+                                    <p class="artistname">Olamide</p>
+                                    <p class="artistdecription">Artist</p>
+                                </div>
+                            </div>
+    
+                            <div class="artistcontainer">
+                                <img src="Omah Lay.jpeg" alt="Omah Lay">
+                                <div>
+                                    <p class="artistname">Omah Lay</p>
+                                    <p class="artistdecription">Artist</p>
+                                </div>
+                            </div>
+    
+                            <div class="artistcontainer">
+                                <img src="Travis Scott.jpeg" alt="Travis Scott">
+                                <div>
+                                    <p class="artistname">Travis Scott</p>
+                                    <p class="artistdecription">Artist</p>
+                                </div>
+                            </div>
+    
+                            <div class="artistcontainer">
+                                <img src="Zinoleesky.jpeg" alt="Zinoleesky">
+                                <div>
+                                    <p class="artistname">Zinoleesky</p>
+                                    <p class="artistdecription">Artist</p>
+                                </div>
+                            </div>
+    
+                            <div class="artistcontainer">
+                                <img src="Rema.jpeg" alt="Rema">
+                                <div>
+                                    <p class="artistname">Rema</p>
+                                    <p class="artistdecription">Artist</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </nav>
+    
+            <div class="webcontents">
+                <nav class="topnavbar">
+                    <header>
+                        <div class="headerleft">
+                            <button class="directions">
+                                <i class="fa-solid fa-angle-left"></i>
+                            </button>
+                            <button class="directions">
+                                <i class="fa-solid fa-angle-right"></i>
+                            </button>   
+                        </div>
+    
+                        <div class="headerright">
+                            <button style="background-color: white; color: black; height: 32px; border: none; border-radius: 50px; display: flex; align-items: center; padding: 4px 16px;">
+                                <p style="font-size: 14px; font-weight: 700; padding-top: 4px;">Explore Premium</p>
+                            </button>
+    
+                            <button style="background-color: rgba(0, 0, 0, 0.54); color: white; height: 32px; display: flex; gap: 6px; align-items: center; border: none; border-radius: 50px; padding: 4px 16px;">
+                                <i class="fa-regular fa-circle-down" style="font-size: 16px; color: rgba(255, 255, 255, 0.7);"></i>
+                                <p style="font-size: 14px; font-weight: 700; padding-top: 4px;">Install App</p>
+                            </button>
+    
+                            <button style="background-color: rgba(0, 0, 0, 0.54); width: 32px; height: 32px; border-radius: 50%; border: none;">
+                                <i class="fa-regular fa-bell" style="color: rgba(255, 255, 255, 0.7); font-size: 16px;"></i>
+                            </button>
+    
+                            <button id="account" style="background-color: rgba(0, 0, 0, 0.54); width: 32px; height: 32px; border-radius: 50%; border: none; display: flex; align-items: center; position: relative;">
+                                <span id="hiddendetail4">Akinkunmiakinwale</span>
+                                <div style="background-color: rgb(25, 230, 140); width: 24px; height: 24px; border-radius: 50%; position: absolute; left: 4px; display: flex; justify-content: center;">
+                                    <p style="font-size: 14px; font-weight: 700; color: black; padding-top: 4px; padding-right: 1px;">A</p>
+                                </div>
+                            </button>
+                        </div>
+                    </header>
+    
+                    <div class="navunder">
+                        <button style="background-color: white; height: 32px; padding: 4px 12px; color: black; border: none; border-radius: 50px; cursor: pointer;">
+                            <p style="font-size: 14px; font-weight: 400; padding-top: 4px;">All</p>
+                        </button>
+    
+                        <button style="background-color: rgba(255, 255, 255, 0.07); height: 32px; padding: 4px 12px; color: white; border: none; border-radius: 50px; cursor: pointer;" class="graybutton">
+                            <p style="font-size: 14px; font-weight: 400; padding-top: 4px;">Music</p>
+                        </button>
+    
+                        <button style="background-color: rgba(255, 255, 255, 0.07); height: 32px; padding: 4px 12px; color: white; border: none; border-radius: 50px; cursor: pointer;" class="graybutton">
+                            <p style="font-size: 14px; font-weight: 400; padding-top: 4px;">Podcasts</p>
+                        </button>
+                    </div>
+                </nav>
+                
+                <section class="spotifysections" style="padding-top: 12%;">
+                    <div class="sectionheads">
+                        <h2>Popular artists</h2>
+                        <a href="">Show all</a>
+                    </div>
+    
+                    <div class="sectioncontents">
+                        <div class="contentsdiv">
+                            <div class="imagediv" >
+                                <img src="Shallipopi.jpeg" alt="Shallipopi">
+                                <button class="playbutton">
+                                    <i class="fa-solid fa-play"></i>
+                                </button>
+                            </div>   
+                            <span>Shallipopi</span>
+                            <p>Artist</p>
+                        </div>
+    
+                        <div class="contentsdiv">
+                            <div class="imagediv">
+                                <img src="Odumodublvck.jpeg" alt="Odumodublvck">
+                                <button class="playbutton">
+                                    <i class="fa-solid fa-play"></i>
+                                </button>
+                            </div>
+                            <span>ODUMODUBLVCK</span>
+                            <p>Artist</p>
+                        </div>
+    
+                        <div class="contentsdiv">
+                            <div class="imagediv">
+                                <img src="Ruger.jpeg" alt="Ruger">
+                                <button class="playbutton">
+                                    <i class="fa-solid fa-play"></i>
+                                </button>
+                            </div>
+                            <span>Ruger</span>
+                            <p>Artist</p>
+                        </div>
+    
+                        <div class="contentsdiv">
+                            <div class="imagediv">
+                                <img src="Young Jonn a.jpeg" alt="Young Jonn">
+                                <button class="playbutton">
+                                    <i class="fa-solid fa-play"></i>
+                                </button>
+                            </div>
+                            <span>Young Jonn</span>
+                            <p>Artist</p>
+                        </div>
+                    
+                        <div class="contentsdiv">
+                            <div class="imagediv">
+                                <img src="Seyi vibez.jpeg" alt="Seyi Vibez">
+                                <button class="playbutton">
+                                    <i class="fa-solid fa-play"></i>
+                                </button>
+                            </div>
+                            <span>Seyi Vibez</span>
+                            <p>Artist</p>
+                        </div>
+                    </div>
+                </section>
+    
+                <section class="spotifysections">
+                    <div class="sectionheads">
+                        <h2>Popular albums</h2>
+                        <a href="">Show all</a>
+                    </div>
+    
+                    <div class="sectioncontents">
+                        <div class="contentsdiv">
+                            <div class="imagediv">
+                                <img src="Travis Scott.jpeg" alt="Utopia" style="border-radius: 5px;">
+                                <button class="playbutton">
+                                    <i class="fa-solid fa-play"></i>
+                                </button>
+                            </div>
+                            <span>Utopia</span>
+                            <p>Travis Scott</p>
+                        </div>
+    
+                        <div class="contentsdiv">
+                            <div class="imagediv">
+                                <img src="popular album 2.jpeg" alt="Jiggy forever" style="border-radius: 5px;">
+                                <button class="playbutton">
+                                    <i class="fa-solid fa-play"></i>
+                                </button>
+                            </div>
+                            <span>Jiggy Forever</span>
+                            <p>Young Jonn</p>
+                        </div>
+    
+                        <div class="contentsdiv">
+                            <div class="imagediv">
+                                <img src="popular album 3.jpeg" alt="I Told Them" style="border-radius: 5px;">
+                                <button class="playbutton">
+                                    <i class="fa-solid fa-play"></i>
+                                </button>
+                            </div>         
+                            <span>I Told Them...</span>
+                            <p>Burna Boy</p>
+                        </div>
+    
+                        <div class="contentsdiv">
+                            <div class="imagediv">
+                                <img src="popular album 4.jpeg" alt="Shakespopi" style="border-radius: 5px;">
+                                <button class="playbutton">
+                                    <i class="fa-solid fa-play"></i>
+                                </button>
+                            </div>
+                            <span>Shakespopi</span>
+                            <p>Shallipopi</p>
+                        </div>
+    
+                        <div class="contentsdiv">
+                            <div class="imagediv">
+                                <img src="popular album 5.jpeg" alt="RnB" style="border-radius: 5px;">
+                                <button class="playbutton">
+                                    <i class="fa-solid fa-play"></i>
+                                </button>
+                            </div>
+                            <span>RnB</span>
+                            <p>Ruger, Bnxn</p>
+                        </div>
+                    </div>
+                </section>
+    
+                <section class="spotifysections">
+                    <div class="sectionheads">
+                        <h2>Popular radio</h2>
+                        <a href="">Show all</a>
+                    </div>
+    
+                    <div class="sectioncontents">
+                        <div class="contentsdiv">
+                            <div class="imagediv">
+                                <img src="radio 1" alt="Chike Radio" style="border-radius: 5px;">
+                                <button class="playbutton">
+                                    <i class="fa-solid fa-play"></i>
+                                </button>
+                            </div>
+                            <span>Chike Radio</span>
+                            <p>With Johnny Drille, Simi, Spyro and more</p>
+                        </div>
+    
+                        <div class="contentsdiv">
+                            <div class="imagediv">
+                                <img src="radio 2" alt="SeyiVibez Radio" style="border-radius: 5px;">
+                                <button class="playbutton">
+                                    <i class="fa-solid fa-play"></i>
+                                </button>
+                            </div>
+                            <span>SeyiVibez Radio</span>
+                            <p>With Balloranking, BhadBoi OML, Barry Jhay and more</p>
+                        </div>
+    
+                        <div class="contentsdiv">
+                            <div class="imagediv">
+                                <img src="radio 3" alt="Mohbad Radio" style="border-radius: 5px;">
+                                <button class="playbutton">
+                                    <i class="fa-solid fa-play"></i>
+                                </button>
+                            </div>
+                            <span>Mohbad Radio</span>
+                            <p>With Zlatan, T.I BLAZE, Bella Shmurda and more</p>
+                        </div>
+    
+                        <div class="contentsdiv">
+                            <div class="imagediv">
+                                <img src="radio 4" alt="Burna Boy Radio" style="border-radius: 5px;">
+                                <button class="playbutton">
+                                    <i class="fa-solid fa-play"></i>
+                                </button>
+                            </div>
+                            <span>Burna Boy Radio</span>
+                            <p>With Wizkid, Asake, Davido and more</p>
+                        </div>
+    
+                        <div class="contentsdiv">
+                            <div class="imagediv">
+                                <img src="radio 5" alt="Victony Radio" style="border-radius: 5px;">
+                                <button class="playbutton">
+                                    <i class="fa-solid fa-play"></i>
+                                </button>
+                            </div>
+                            <span>Victony Radio</span>
+                            <p>With Wizkid, Asake, Davido and more</p>
+                        </div>
+                    </div>
+                </section>
+    
+                <section class="spotifysections">
+                    <div class="sectionheads">
+                        <h2>Best of the Week</h2>
+                        <a href="">Show all</a>
+                    </div>
+    
+                    <div class="sectioncontents">
+                        <div class="contentsdiv">
+                            <div class="imagediv">
+                                <img src="best 1.jpeg" alt="Radar" style="border-radius: 5px;">
+                                <button class="playbutton">
+                                    <i class="fa-solid fa-play"></i>
+                                </button>
+                            </div>
+                            <span>RADAR Africa</span>
+                            <p>The most exciting new artists on the rise from the African continent & diaspora. Cover:  </p>
+                        </div>
+    
+                        <div class="contentsdiv">
+                            <div class="imagediv">
+                                <img src="best 2.jpeg" alt="Fresh Finds" style="border-radius: 5px;">
+                                <button class="playbutton">
+                                    <i class="fa-solid fa-play"></i>
+                                </button>
+                            </div>
+                            <span>Fresh Finds Africa</span>
+                            <p>The best new music by independent African artists and labels. Cover:  </p>
+                        </div>
+    
+                        <div class="contentsdiv">
+                            <div class="imagediv">
+                                <img src="best 3.jpeg" alt="Naija Bars" style="border-radius: 5px;">
+                                <button class="playbutton">
+                                    <i class="fa-solid fa-play"></i>
+                                </button>
+                            </div>
+                            <span>Naija Bars</span>
+                            <p>Hip hop and rap music from Nigeria. Cover: Ice Prince</p>
+                        </div>
+    
+                        <div class="contentsdiv">
+                            <div class="imagediv">
+                                <img src="best 4.jpeg" alt="Equal Africa" style="border-radius: 5px;">
+                                <button class="playbutton">
+                                    <i class="fa-solid fa-play"></i>
+                                </button>
+                            </div>
+                            <span>EQUAL Africa</span>
+                            <p>Listen to African women at full volume. Cover: </p>
+                        </div>
+    
+                        <div class="contentsdiv">
+                            <div class="imagediv">
+                                <img src="best 5.jpeg" alt="afro adura" style="border-radius: 5px;">
+                                <button class="playbutton">
+                                    <i class="fa-solid fa-play"></i>
+                                </button>
+                            </div>
+                            <span>afro adura</span>
+                            <p>Baba God, run am 🙏. 
+                                Cover: Asake</p>
+                        </div>
+                    </div>
+                </section>
+    
+                <div class="extralinks">
+                    <div class="extralists">
+                        <ul>
+                            <p>Company</p>
+                            <li>About</li>
+                            <li>Jobs</li>
+                            <li>For the Record</li>
+                        </ul>
+                        <ul>
+                            <p>Community</p>
+                            <li>For Artists</li>
+                            <li>Developers</li>
+                            <li>Advertisments</li>
+                            <li>Investors</li>
+                            <li>Vendors</li>
+                        </ul>
+                        <ul>
+                            <p>Useful links</p>
+                            <li>Support</li>
+                            <li>Free Mobile App</li>
+                        </ul>
+                        <ul>
+                            <p>Spotify Plans</p>
+                            <li>Premium Individuals</li>
+                            <li>Premium Duo</li>
+                            <li>Premium Family</li>
+                            <li>Premium Student</li>
+                            <li>Free Spotify</li>
+                        </ul>
+                    </div>
+    
+                    <div class="socialmedia">
+                        <a href="">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                <hr>
+    
+                <footer>
+                    <div style="margin:16px 16px;">
+                        <span>Legal</span>
+                        <span>Safety & Privacy Center</span>
+                        <span>Privacy Policy</span>
+                        <span>Cookies</span>
+                        <span>About Ads</span>
+                        <span>Accessibility</span>
+                    </div>
+    
+                    <div style="margin-left: auto; margin-right: 32px; margin-top: 16px;">
+                        <p>© 2024 Spotify AB</p>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <div class="playmediacontainer">
+            <div class="playmedia">
+                <div style="display: flex; align-items: center; width: fit-content;">
+                    <img src="cast.jpg" style="width: 56px; height: 56px; object-fit: cover; border-radius: 3px; margin:0px 8px;">
+                    <div style="padding-top: 6px; margin-right: 8px;">
+                        <a href="" class="currentsong">Cast</a>
+                        <div class="playartist">
+                            <a href="">Shallipopi,</a>
+                            <a href=""> ODUMODUBLVCK</a>
+                        </div>
+                    </div>
+                    <button style="background-color: black; border: none; color: rgb(30, 215, 96); padding: 8px;">
+                        <i class="fa-solid fa-circle-plus" style="font-size: 16px;"></i>
+                    </button>
+                </div>
+                <div class="playercontrols">
+                    <div class="playercontrolbuttons">
+                        <div class="playercontrolbuttonsleft">
+                            <div style="width: fit-content; height: fit-content; margin-left: auto;">
+                                <button>
+                                    <i class="fa-solid fa-shuffle"></i>
+                                </button>
+                                <button>
+                                    <i class="fa-solid fa-backward-step"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <button style="width: 32px; height: 32px; border: none; border-radius: 50%; background-color: white; color: black;">
+                            <i class="fa-solid fa-play" style="font-size: 18px; padding-left: 2px; padding-top: 4px;"></i>
+                        </button>
+
+                        <div class="playercontrolbuttonsright" style="display: flex; gap: 8px; align-items: center; width: 187.8px;">
+                            <div style="width: fit-content; height: fit-content; margin-right: auto;">
+                                <button style="    background-color: black; border: none; color: rgb(167, 167, 167); width: 32px; height: 32px; cursor: pointer;">
+                                    <i class="fa-solid fa-forward-step" style="font-size: 18px;"></i>
+                                </button>
+                                <button style="    background-color: black; border: none; color: rgb(167, 167, 167); width: 32px; height: 32px; cursor: pointer;">
+                                    <i class="fa-solid fa-repeat" style="font-size: 18px;"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="songtrack" >
+                        <span style="color: rgb(167, 167, 167); font-size: 12px; font-weight: 400;">0:00</span>
+                        <input type="range" style="border: none;">
+                        <span style="color: rgb(167, 167, 167); font-size: 12px; font-weight: 400;">2:09</span>
+                    </div>
+                </div>
+
+                <div style="display: flex; margin-left: auto; align-items: center;" class="playsettings">
+                    <button>
+                        <i class="fa-solid fa-microphone" style="transform: rotate(30deg);"></i>
+                    </button>
+
+                    <div style="display: flex; align-items: center; gap: 8px; width: fit-content;">
+                        <button>
+                            <i class="fa-solid fa-volume-high"></i>
+                        </button>
+                        <input type="range">
+n                   </div>
+
+                    <button style="padding-left: 0px;">
+                        <i class="fa-regular fa-window-restore"></i>
+                    </button>
+
+                    <button>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+</html>

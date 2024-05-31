@@ -1,0 +1,861 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Circular Spotify Text';
+}
+
+html{
+    overflow-y: hidden;
+}
+
+body{
+    background-color: black;
+}
+
+.bodydiv{
+    padding: 8px;
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+}
+
+.sidenavbar{
+    width: 40%;
+    height: 537px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: auto;
+    margin-right: 8px;
+}
+
+.sidenavbar ul{
+    background-color: rgb(18, 18, 18);
+    padding: 8px 12px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidenavbar li{
+    padding: 4px 12px;
+    list-style-type: none
+}
+
+.sidenavbar li a{
+    display: flex;
+    align-items: center;
+    gap: 21px;
+    text-decoration: none;
+    height: 40px;
+}
+
+.sidenavbar li .homeicon{
+    color: white;
+}
+
+.sidenavbar li .searchicon{
+    color: rgb(179, 179, 179);
+    cursor: pointer;
+}
+
+.sidenavbar li .searchicon:hover{
+    color: white;
+    transition: ease-out 0.3s;
+}
+
+.sidenavbar ul li a i{
+    font-size:24px;
+}
+
+.sidenavbar li p{
+    font-size: 16px;
+    font-weight: 700;
+    padding-top: 6px;
+}
+
+.sidenavbottom{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(18, 18, 18);
+    border-radius: 8px;
+    width: 100%;
+    height: 417px;
+}
+
+.sidenavbottom header{
+    padding: 8px 0px;
+}
+
+.sidenavbottom header .headerfirst{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-right: 18px;
+}
+
+.sidenavbottom header .headerfirst button{
+    display: flex;
+    gap: 12px;
+    background-color: rgb(18, 18, 18);
+    padding: 0px 20px;
+    color: rgb(167, 167, 167);
+    border: none;
+    align-items: center;
+    margin-right: auto;
+    position: relative;
+}
+
+.headerfirst #hiddendetail{
+    position: absolute;
+    top: -40px;
+    left: 8px;
+    background-color: #1f1e1e;
+    border-radius: 5px;
+    padding: 4px 8px;
+    padding-top: 8px;
+    font-weight: 700;
+    color: white;
+    box-shadow: 0 8px 24px rgba(0,0,0,.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.sidenavbottom header .headerfirst button:hover{
+    color: white ;
+    cursor: pointer;
+}
+
+.headerfirst button:hover #hiddendetail{
+    opacity: 1;
+}
+
+.headerfirst .plus{
+    position: relative;
+}
+
+.headerfirst .plus #hiddendetail2{
+    position: absolute;
+    top: -20px;
+    left: -100px;
+    width: 180px;
+    background-color: #1f1e1e;
+    border-radius: 5px;
+    padding: 4px 8px;
+    padding-top: 8px;
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    box-shadow: 0 8px 24px rgba(0,0,0,.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.headerfirst .plus:hover{
+    color: white ;
+    cursor: pointer;
+}
+
+.headerfirst .plus:hover #hiddendetail2{
+    opacity: 1;
+}
+
+.headerfirst .arrow{
+    position: relative;
+}
+
+.headerfirst .arrow #hiddendetail3{
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    width: 90px;
+    background-color: #1f1e1e;
+    border-radius: 5px;
+    padding: 4px 8px;
+    padding-top: 8px;
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    box-shadow: 0 8px 24px rgba(0,0,0,.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.headerfirst .arrow:hover{
+    color: white ;
+    cursor: pointer;
+}
+
+.headerfirst .arrow:hover #hiddendetail3{
+    opacity: 1;
+}
+
+.sidenavbottom header .headerfirst button i{
+    font-size: 24px;
+}
+
+.sidenavbottom header .headerfirst button p{
+    font-size: 16px;
+    font-weight: 700;
+    padding-top: 6px;
+}
+
+.sidenavbottom header .headerfirst span{
+    color: rgb(167, 167, 167);
+    padding: 8px;
+    padding-top: 14px;
+} 
+
+.sidenavbottom header .headerfirst span i{
+    font-size: 20px;
+}
+
+.sidenavbottom .headersecond{
+    height: 48px;
+    display: flex;
+    align-items: center;
+    padding: 0px 16px;
+    margin-top: 2px;
+    z-index: 1000;
+}
+
+.sidenavbottom .headersecond button{
+    padding: 4px 12px;
+    height: 32px;
+    border: none;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.07);
+    border-radius: 40px;
+}
+
+.sidenavbottom .headersecond p{
+    padding-top: 4px;
+}
+
+.sidenavbottom .playlistartist{
+    padding: 0px 8px 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+}
+
+.sidenavbottom .playlistartist:hover{
+    overflow-y: scroll;
+    transition-timing-function: ease-in-out;
+    transition-delay: 3s;
+    cursor: pointer;
+}
+
+.sidenavbottom .playlistartist::-webkit-scrollbar{
+    width: 13px;
+    background-color: rgb(18, 18, 18);
+    border-radius: 8px;
+}
+
+/* Handle */
+.sidenavbottom .playlistartist::-webkit-scrollbar-thumb {
+    background: #555;
+  }
+  
+/* Handle on hover */
+.sidenavbottom .playlistartist::-webkit-scrollbar-thumb:hover {
+    background: rgb(112, 112, 112);
+    transition-timing-function: ease-in-out;
+}
+
+.sidenavbottom .searchrecents{
+    padding: 2px 4px 0px 16px;
+    display: flex;
+    align-items: center;
+    gap: auto;
+}
+
+.sidenavbottom .searchrecents button{
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(167, 167, 167);
+    border: none;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    height: 32px;
+    padding: 4px 12px 4px 16px;
+}
+
+.sidenavbottom .searchrecents button p{
+    padding-top: 4px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.sidenavbottom .searchrecents button i{
+    font-size: 16px;
+}
+
+.sidenavbottom .searchrecents i{
+    font-size: 16px;
+    color: rgb(167, 167, 167);
+}
+
+
+.sidenavbottom .overflowartists .likedsongscontainer{
+    display: flex;
+    height: 64px;
+    align-items: center;
+    padding: 8px;
+}
+
+.sidenavbottom .overflowartists .likedsongscontainer img{
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    margin-right: 12px;
+}
+
+.sidenavbottom .overflowartists .likedsongscontainer .libname{
+    color: white;
+    font-weight: lighter;
+    margin-bottom: 6px;
+}
+
+.sidenavbottom .overflowartists .likedsongscontainer .libdetails{
+    color: rgb(167, 167, 167);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.sidenavbottom .overflowartists .likedsongscontainer i{
+    color: rgb(30, 215, 96);
+    margin-right: 6px;
+    transform: rotate(45deg);
+}
+
+.sidenavbottom .overflowartists .artistcontainer{
+    display: flex;
+    height: 64px;
+    align-items: center;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.sidenavbottom .overflowartists .artistcontainer:hover{
+    background-color: rgba(28, 26, 26, 0.8);
+}
+
+.sidenavbottom .overflowartists .artistcontainer img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 12px;
+    box-shadow: 0 8px 60px rgba(0,0,0,.5);
+}
+
+.sidenavbottom .overflowartists .artistcontainer .artistname{
+    color: white;
+}
+
+.sidenavbottom .overflowartists .artistcontainer .artistdecription{
+    color: rgb(179, 179, 179);
+    font-size: 14px;
+    font-weight: 100;
+    margin-top: 4px;
+}
+
+/* ======================= MAIN BODY ====================== */
+.webcontents{
+    background-color: rgb(18, 18, 18);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.1) 0%, rgb(18, 18, 18) 100%);
+    width: 100%;
+    height: 537px;
+    border: none;
+    border-radius: 8px;
+    margin-left: auto;
+    margin-bottom: auto;
+    padding: 16px;
+    padding-top: 12px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.webcontents:hover{
+    overflow-y: scroll;
+}
+
+.webcontents::-webkit-scrollbar-track{
+    background-color: transparent;
+    /* display: none;
+    overflow: hidden; */
+}
+
+.webcontents::-webkit-scrollbar{
+    width: 13px;
+    background-color: transparent;
+    border-radius: 8px;
+    transition-timing-function: ease-in-out;
+    transition-delay: 3s;
+}
+
+/* Handle */
+.webcontents::-webkit-scrollbar-thumb {
+    background: #555;
+}
+
+.topnavbar{
+    margin-bottom: 16px;  
+    width: 68.5%;
+    position: fixed;
+    z-index: 1000;  
+
+}
+
+.topnavbar header{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.topnavbar header .headerleft{
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.topnavbar header .headerleft button{
+    display: flex;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    border: none;
+    border-radius: 50%;
+    background-color: rgb(18, 18, 18);
+    color: rgb(167, 167, 167);
+    cursor: not-allowed;
+}
+
+.topnavbar header .headerleft i{
+    font-size: 20px;
+    padding-left: 9px;
+}
+
+.topnavbar header .headerright{
+    margin-left: auto;
+    width: fit-content;
+    display: flex;
+    gap: 8px;
+    padding-top: 8px;
+}
+
+
+#hiddendetail4{
+    position: absolute;
+    bottom: -35px;
+    left: -90px;
+    width: fit-content;
+    background-color: #1f1e1e;
+    border-radius: 5px;
+    padding: 4px 8px;
+    padding-top: 8px;
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    box-shadow: 0 8px 24px rgba(0,0,0,.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.topnavbar header .headerright button:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+#account:hover #hiddendetail4{
+    opacity: 1;
+}
+
+.navunder{
+    display: flex;
+    gap: 8px;
+}
+
+.navunder .graybutton{
+    transition: background-color 0.3s ease
+}
+
+.navunder .graybutton:hover{
+    background-color: #555;
+}
+
+
+.spotifysections{
+    padding: 8px 0px 0px;
+    margin-bottom: 24px;
+}
+
+.sectionheads{
+    display: flex;
+    align-items: center;
+    margin-top: 24px;
+    margin-bottom: 12px;
+}
+
+.sectionheads h2{
+    color: white;
+    letter-spacing: -1px;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.sectionheads h2:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.sectionheads a{
+    color: rgb(179, 179, 179);
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    margin-left: auto;
+}
+
+.sectionheads a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.sectioncontents{
+    display: flex;
+    gap: 4px;
+    margin: -8px 0px 0px -8px;
+}
+
+.sectioncontents .contentsdiv{
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    border-radius: 8px;
+}
+
+.contentsdiv:hover{
+    cursor: pointer;
+    background-image: linear-gradient(rgb(34, 31, 31) -1%, rgba(255, 255, 255, 0.1) 100%);
+}
+
+.contentsdiv:hover .playbutton{
+    display: block;
+}
+
+.sectioncontents .imagediv{
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+}
+
+.sectioncontents img{
+    width: 163.25px;
+    height: 163.25px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 8px 24px rgba(0,0,0,.5);
+}
+
+
+.sectioncontents .playbutton{
+    background-color: rgb(30, 215, 96);
+    color: black;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, .3);
+    width: 48px;
+    height: 48px;
+    border: none;
+    border-radius: 50%;
+    position: absolute;
+    right: 12px;
+    bottom: 12px;
+    display: none;
+} 
+
+.sectioncontents .playbutton:hover{
+    cursor: pointer;
+    transform: scale(1.05)
+}
+
+.sectioncontents .playbutton i{
+    font-size: 20px;
+    text-align: center;
+    padding-left: 3px;
+    padding-top: 4px;
+}
+
+
+.sectioncontents span{
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    margin-top: 6px;
+}
+
+.sectioncontents p{
+    font-size: 14px;
+    color: rgb(179, 179, 179);
+    display: -webkit-box; /* Flexbox-based container */
+    -webkit-line-clamp: 2; /* Number of lines to display before truncating */
+    -webkit-box-orient: vertical; /* Orient the flexbox vertically */
+    overflow: hidden; /* Hide the overflowing text */
+    text-overflow: ellipsis; /* Add ellipsis (...) */
+    white-space: normal; /* Allow text to wrap normally */
+    margin-top: 4px;
+}
+
+.webcontents .extralinks{
+    width: 100%;
+    padding: 16px 16px 40px;
+    display: flex;
+    margin-bottom: 32px;
+    margin-top: 60px;
+}
+
+.extralists{
+    width: fit-content;
+    display: flex;
+    gap: 54px;
+}
+
+.extralists ul{
+    list-style-type: none;
+    padding-right: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;  
+}
+
+.extralists ul p{
+    color: white;
+    font-weight: 700;
+}
+
+.extralists ul li{
+    font-family: 16px;
+    font-weight: 400;
+    color: rgb(167, 167, 167);
+    padding-bottom: 4px;
+    text-wrap: wrap;
+}
+
+.extralists ul li:hover{
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.socialmedia{
+    margin-left: auto;
+    display: flex;
+    gap: 16px;
+}
+
+.socialmedia a{
+    background-color: rgb(41, 41, 41);
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding-top: 12px;
+}
+
+.socialmedia:hover{
+    cursor: default;
+}
+
+.socialmedia a:hover{
+    cursor: default;
+}
+
+.socialmedia i{
+    font-size: 16px;
+}
+
+hr{
+    margin: 32px 16px;
+    border-top: 0.25px solid rgb(41, 41, 41) ;
+    border-right: none;
+    border-left: none;
+    border-bottom: none;
+}
+
+footer{
+    margin-top: 16px;
+    margin-bottom: 60px;
+    display: flex;
+    cursor: normal;
+}
+
+footer span{
+    margin-right: 16px;
+    font-size: 14px;
+    color: rgb(167, 167, 167);
+}
+
+footer span:hover{
+    color: white;
+    cursor: pointer;
+}
+
+footer p{
+    font-size: 14px;
+    color: rgb(167, 167, 167)  
+}
+
+.playmedia{
+    width: 100vw;
+    height: 72px;
+    display: flex;
+    padding: 8px;
+}
+
+.currentsong{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    padding-left: 8px;
+}
+
+.currentsong:hover{
+    text-decoration: underline;
+}
+
+
+.playartist{
+    padding-left: 8px;
+}
+
+.playartist a{
+    color: rgb(167, 167, 167);
+    font-size: 12px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.playartist a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+.playercontrols{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-left: 100px;
+}
+
+.playercontrolbuttons{
+    display: flex;
+    align-items: center;
+    height: 32px;
+    gap: 16px;
+    align-self: center;
+}
+
+.playercontrolbuttonsleft{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    text-align: right;
+    width: 187.8px;
+}
+
+.playercontrolbuttonsleft button{
+    background-color: black;
+    border: none;
+    color: rgb(167, 167, 167);
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+
+.playercontrolbuttonsleft button i{
+    font-size: 18px;
+}
+
+.songtrack{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+input[type="range"] {
+    -webkit-appearance: none; /* Remove default appearance */
+    width: 90%; /* Full width */
+    margin: 16px 0; /* Some margin for spacing */
+    align-self: center;
+}
+  
+  /* Track styling */
+input[type="range"]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 3px; /* Height of the track */
+    background: rgb(138, 138, 138); /* Track color */
+    border: none; /* No border */
+    border-radius: 50%; /* Rounded corners */
+    border: none;
+    outline: none;
+}
+
+/* input[type="range"]::-webkit-slider-runnable-track:hover{
+    background-color: rgb(30, 215, 96);
+} */
+
+input[type="range"]::-webkit-slider-runnable-track:hover input[type="range"]::-webkit-slider-thumb{ 
+    background-color: rgb(30, 215, 96);
+}
+
+  /* Thumb styling */
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Remove default appearance */
+    width: 12px; /* Width of the thumb */
+    height: 12px; /* Height of the thumb */
+    background: white; /* Thumb color */
+    border-radius: 50%; /* Rounded thumb */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin-top: -4px;
+}
+
+.playsettings button{
+    height: 32px;
+    width: 32px;
+    border: none;
+    background-color: black;
+    color: rgb(167, 167, 167);
+    padding: 8px;
+    cursor: pointer;
+}
+
+.playsettings button i{
+    font-size: 16px;
+}
+
+.playsettings input::-webkit-slider-runnable-track{
+    background-color: white;
+    width: 93px;
+    border-radius: 50%;
+}
+
+.playsettings input::-webkit-slider-thumb{
+    display: none;
+}
+
+.playmedia button:hover{
+    color: white;
+}
+
