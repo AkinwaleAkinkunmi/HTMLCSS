@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
+}
+
+.sectionone{
+    background: linear-gradient(1turn, #7344fc, #1b2ae6);
+    background-repeat: no-repeat;
+    padding: 40px 5%;
+    width: 100%;
+    background-size: cover;
+    height: fit-content;
+}
+
+nav{
+    display: flex;
+    background-color: white;
+    align-items: center;
+    padding: 12px 40px;
+    border-radius: 8px;
+    margin-bottom: 60px;
+}
+
+
+.klaslogocontainer img{
+    height: 40px;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    height: 44px;
+    gap: 30px;
+    list-style-type: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.5);
+    margin: auto;
+}
+
+.buttoncontainers{
+    margin-left: auto;
+}
+
+#Login{
+    padding: 0px 32px;
+    border: none;
+    background-color: transparent;
+    color: rgb(17, 39, 227);
+    font-size: 16px;
+}
+
+#Signup{
+    padding: 16px 32px;
+    border: none;
+    background-color: rgb(17, 39, 227);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.textcontainer{
+    width: fit-content;
+}
+
+.textcontainer h1{
+    font-size: 64px;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.textcontainer p{
+    font-size: 24px;
+    font-weight: 400px;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 40px;
+    width: 120%;
+}
+
+#signfree{
+    padding: 18px 34px;
+    border: none;
+    color: rgb(17, 39, 227);
+    background-color: white;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+#requestdemo{
+    padding: 18px 24px;
+    border: none;
+    color: white;
+    background-color: transparent;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+#imageone{
+    width: 640px;
+    object-fit: cover;
+}
