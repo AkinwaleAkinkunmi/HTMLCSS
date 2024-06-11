@@ -12,7 +12,6 @@
     background-repeat: no-repeat;
     padding: 40px 5%;
     width: 100%;
-    background-size: cover;
     height: fit-content;
 }
 
@@ -46,6 +45,10 @@ nav ul{
     margin-left: auto;
 }
 
+.buttoncontainers i{
+    display: none;
+}
+
 #Login{
     padding: 0px 32px;
     border: none;
@@ -62,6 +65,10 @@ nav ul{
     font-size: 16px;
     font-weight: bold;
     border-radius: 8px;
+}
+
+.sectiononecontent{
+    display: flex;
 }
 
 .textcontainer{
@@ -105,4 +112,208 @@ nav ul{
 #imageone{
     width: 640px;
     object-fit: cover;
+}
+
+.sectiontwo{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 16px 8px;
+    gap: 10px;
+}
+
+.sectiontwo div{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #1b2ae6;
+    color: white;
+    border-radius: 8px;
+    padding: 40px 28px;
+}
+
+
+@media (min-width: 320px) and (max-width: 375px){ 
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.sectionone{
+    width: 100vw;
+    padding: 0px 20px;
+    padding-top: 40px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+
+nav{
+    padding: 13px 30px;
+}
+
+.sectionone *{
+    max-width: 100%;
+}
+
+.sectionone ul, .buttoncontainers button{
+    display: none;
+}
+
+.sectiononecontent{
+    display: block;
+}
+
+#imageone{
+    display: block;
+    width: 100% ;
+    margin-top: 80px;
+}
+
+.buttoncontainers i{
+    display: block;
+}
+
+.textcontainer{
+    display: block;
+}
+
+.textcontainer h1{
+font-size: 42px;
+}
+
+.textcontainer p{
+    font-size: 18px;
+}
+
+.sectiontwo{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sectiontwo div{
+    padding: 18px 30px;
+}
+}
+
+@media (min-width: 376px) and (max-width: 547px){ 
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    .sectionone{
+        width: 100vw;
+        padding: 0px 20px;
+        padding-top: 40px;
+        margin: 0 auto;
+        padding-bottom: 100px;
+    }
+    
+    nav{
+        padding: 13px 30px;
+    }
+    
+    .sectionone *{
+        max-width: 100%;
+    }
+    
+    .sectionone ul, .buttoncontainers button{
+        display: none;
+    }
+    
+    .sectiononecontent{
+        display: block;
+    }
+    
+    #imageone{
+        display: block;
+        width: 100%;
+        margin-top: 80px;
+    }
+    
+    .buttoncontainers i{
+        display: block;
+    }
+    
+    .textcontainer{
+        display: block;
+    }
+    
+    .textcontainer h1{
+    font-size: 42px;
+    }
+    
+    .textcontainer p{
+        font-size: 18px;
+    }
+    
+    .sectiontwo{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+    
+    .sectiontwo div{
+        padding: 40px 30px;
+    }
+}
+
+@media (min-width: 548px) and (max-width: 768px){ 
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    .sectionone{
+        width: 100vw;
+        padding: 0px 20px;
+        padding-top: 40px;
+        margin: 0 auto;
+        padding-bottom: 100px;
+    }
+    
+    nav{
+        padding: 13px 30px;
+    }
+    
+    .sectionone *{
+        max-width: 100%;
+    }
+    
+    .sectionone ul, .buttoncontainers button{
+        display: none;
+    }
+    
+    .sectiononecontent{
+        display: block;
+    }
+    
+    #imageone{
+        display: block;
+        width: 100%;
+        margin-top: 80px;
+    }
+    
+    .buttoncontainers i{
+        display: block;
+    }
+    
+    .textcontainer{
+        width: 100%;
+        display: block;
+    }
+    
+    
+    .sectiontwo{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+    }
+    
+    .sectiontwo div{
+        padding: 60px 30px;
+    }
 }
