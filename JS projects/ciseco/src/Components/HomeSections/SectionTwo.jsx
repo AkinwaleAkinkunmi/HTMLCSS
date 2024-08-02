@@ -491,10 +491,7 @@ const SectionTwo = () => {
               </div>
             </SwiperSlide>
           </Swiper>
-          <br />
-          <br />
-          <br />
-          <br />
+          <hr className="mt-32" />
         </>
       </div>
     </div>
