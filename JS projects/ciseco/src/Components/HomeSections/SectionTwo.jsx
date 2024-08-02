@@ -44,7 +44,7 @@ const SectionTwo = () => {
   };
 
   return (
-    <div className="p-[62px] mt-16 relative">
+    <div className="p-[62px] mt-16 pb-0 relative">
       <div className="mb-14">
         <h2 className="text-black text-4xl font-bold">
           Discover more.{" "}
