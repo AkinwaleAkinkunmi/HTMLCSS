@@ -13,7 +13,7 @@ AOS.init();
 
 const Home = () => {
   return (
-    <div>
+    <div className="overflow-x-hidden">
       <SectionOne />
       <SectionTwo />
       <SectionThree/>

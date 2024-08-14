@@ -1,5 +1,7 @@
 import React from "react";
 
+import { FaStar } from "react-icons/fa6";
+
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -19,6 +21,10 @@ import brownfull from "../Ciseco images/brownfull.webp";
 import brown2 from "../Ciseco images/brown2.webp";
 import brown1 from "../Ciseco images/brown1.webp";
 import brown3 from "../Ciseco images/brown3.webp";
+import tote from "../Ciseco images/totefull.webp"
+import tote1 from "../Ciseco images/tote1.webp"
+import tote2 from "../Ciseco images/tote2.webp"
+import tote3 from "../Ciseco images/tote3.webp"
 
 const SectionFive = () => {
   return (
@@ -57,11 +63,10 @@ const SectionFive = () => {
         <span className="w-4 h-4 rounded-full bg-purple-500 absolute"></span>
       </div>
 
-      <div>
+      <div className="py-[5rem] mt-16">
         <div className="mb-14">
           <h2 className="text-black text-4xl font-bold">
-            Best Sellers.{" "}
-            <span className="text-neutral-500">Best selling of the month</span>
+            Chosen by our experts
           </h2>
         </div>
         <>
@@ -73,20 +78,154 @@ const SectionFive = () => {
             className="mySwiper"
           >
             <SwiperSlide>
-              <div className="px-[62px] py-[7rem] mt-16">
-                <div className="bg-neutral-100">
+              <div>
+                <div className="bg-neutral-100 rounded-2xl">
                   <Image src={brownfull} width={0} height={0} />
                 </div>
-                <div className="flex gap-2.5 mt-2.5">
-                  <div>
-                    <Image src={brown1} width={0} height={0} />
+                <div className="grid grid-cols-3 gap-2.5 mt-2.5">
+                  <div className="h-24">
+                    <Image
+                      src={brown1}
+                      width={0}
+                      height={0}
+                      className="rounded-2xl object-cover"
+                    />
                   </div>
-                  <div>
-                    <Image src={brown1} width={0} height={0} />
+                  <div className="h-24">
+                    <Image
+                      src={brown2}
+                      width={0}
+                      height={0}
+                      className="rounded-2xl object-cover"
+                    />
                   </div>
-                  <div>
-                    <Image src={brown1} width={0} height={0} />
+                  <div className="h-24">
+                    <Image
+                      src={brown3}
+                      width={0}
+                      height={0}
+                      className="rounded-2xl object-cover"
+                    />
                   </div>
+                </div>
+                <div className="flex mt-5 items-center">
+                  <div>
+                    <h2 className="text-left font-semibold">
+                      Suede Bomber jacket
+                    </h2>
+                    <div className="flex items-center text-neutral-400 text-sm mt-3">
+                      <p className="flex gap-1 items-center ml-auto text-neutral-400 text-sm">
+                        Orange <span className="mx-2 font-thin">|</span>
+                        <FaStar className="text-yellow-400 text-lg" /> 4.9
+                        &#40;98 reviews&#41;
+                      </p>
+                    </div>
+                  </div>
+                  <button className="px-2.5 py-1 border-green-500 border-2 rounded-xl text-sm font-bold ml-auto mb-auto">
+                    <span className="text-green-500">$30</span>
+                  </button>
+                </div>
+              </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <div>
+                <div className="bg-neutral-100 rounded-2xl">
+                  <Image src={tote} width={0} height={0} />
+                </div>
+                <div className="grid grid-cols-3 gap-2.5 mt-2.5">
+                  <div className="h-24">
+                    <Image
+                      src={tote1}
+                      width={0}
+                      height={0}
+                      className="rounded-2xl object-cover"
+                    />
+                  </div>
+                  <div className="h-24">
+                    <Image
+                      src={tote2}
+                      width={0}
+                      height={0}
+                      className="rounded-2xl object-cover"
+                    />
+                  </div>
+                  <div className="h-24">
+                    <Image
+                      src={tote3}
+                      width={0}
+                      height={0}
+                      className="rounded-2xl object-cover"
+                    />
+                  </div>
+                </div>
+                <div className="flex mt-5 items-center">
+                  <div>
+                    <h2 className="text-left font-semibold">
+                      Suede Bomber jacket
+                    </h2>
+                    <div className="flex items-center text-neutral-400 text-sm mt-3">
+                      <p className="flex gap-1 items-center ml-auto text-neutral-400 text-sm">
+                        Orange <span className="mx-2 font-thin">|</span>
+                        <FaStar className="text-yellow-400 text-lg" /> 4.9
+                        &#40;98 reviews&#41;
+                      </p>
+                    </div>
+                  </div>
+                  <button className="px-2.5 py-1 border-green-500 border-2 rounded-xl text-sm font-bold ml-auto mb-auto">
+                    <span className="text-green-500">$30</span>
+                  </button>
+                </div>
+              </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <div>
+                <div className="bg-neutral-100 rounded-2xl">
+                  <Image src={tote} width={0} height={0} />
+                </div>
+                <div className="grid grid-cols-3 gap-2.5 mt-2.5">
+                  <div className="h-24">
+                    <Image
+                      src={tote1}
+                      width={0}
+                      height={0}
+                      className="rounded-2xl object-cover"
+                    />
+                  </div>
+                  <div className="h-24">
+                    <Image
+                      src={tote2}
+                      width={0}
+                      height={0}
+                      className="rounded-2xl object-cover"
+                    />
+                  </div>
+                  <div className="h-24">
+                    <Image
+                      src={tote3}
+                      width={0}
+                      height={0}
+                      className="rounded-2xl object-cover"
+                    />
+                  </div>
+                </div>
+                <div className="flex mt-5 items-center">
+                  <div>
+                    <h2 className="text-left font-semibold">
+                      Suede Bomber jacket
+                    </h2>
+                    <div className="flex items-center text-neutral-400 text-sm mt-3">
+                      <p className="flex gap-1 items-center ml-auto text-neutral-400 text-sm">
+                        Orange <span className="mx-2 font-thin">|</span>
+                        <FaStar className="text-yellow-400 text-lg" /> 4.9
+                        &#40;98 reviews&#41;
+                      </p>
+                    </div>
+                  </div>
+                  <button className="px-2.5 py-1 border-green-500 border-2 rounded-xl text-sm font-bold ml-auto mb-auto">
+                    <span className="text-green-500">$30</span>
+                  </button>
                 </div>
               </div>
             </SwiperSlide>
