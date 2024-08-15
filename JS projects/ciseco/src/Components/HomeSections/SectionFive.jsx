@@ -65,7 +65,7 @@ const SectionFive = () => {
 
       <div className="py-[5rem] mt-16">
         <div className="mb-14">
-          <h2 className="text-black text-4xl font-bold">
+          <h2 className="text-slate-900 text-4xl font-bold">
             Chosen by our experts
           </h2>
         </div>
