@@ -6,6 +6,7 @@ import SectionFour from "@/Components/HomeSections/SectionFour";
 import SectionThree from "@/Components/HomeSections/SectionThree";
 import SectionFive from "@/Components/HomeSections/SectionFive";
 import SectionSix from "@/Components/HomeSections/SectionSix";
+import SectionSeven from "@/Components/HomeSections/SectionSeven";
 
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
@@ -21,6 +22,7 @@ const Home = () => {
       <SectionFour/>
       <SectionFive/>
       <SectionSix/>
+      <SectionSeven/>
     </div>
   );
 };
