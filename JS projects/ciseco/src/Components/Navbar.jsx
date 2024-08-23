@@ -8,13 +8,15 @@ import { IoIosArrowDown } from "react-icons/io";
 import { IoSearchOutline } from "react-icons/io5";
 import { CiUser } from "react-icons/ci";
 import { IoCartOutline } from "react-icons/io5";
+import { FaMoon } from "react-icons/fa6";
+import { IoSunny } from "react-icons/io5";
 
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
 // ..
 AOS.init();
 
-const Navbar = () => {
+const Navbar = ({ isDark, toggleDark }) => {
   const [showDropdown, setShowDropdown] = useState(false);
   const [showDropDown2, setShowDropDown2] = useState(false);
   const [showDropDown3, setShowDropDown3] = useState(false);
@@ -50,7 +52,7 @@ const Navbar = () => {
 
       <div className="m-auto">
         <ul className="flex text-md  text-[15px] font-medium font-Poppins relative">
-          <Link href={'/products'}>
+          <Link href={"/products"}>
             <li className="cursor-pointer hover:bg-neutral-200 hover:rounded-3xl py-2.5 px-4">
               Products
             </li>
@@ -164,6 +166,17 @@ const Navbar = () => {
         </div>
         <div>
           <IoCartOutline className="text-2xl" />
+        </div>
+        <div onClick={toggleDark}>
+          {isDark === false ? (
+            <div>
+              <FaMoon />
+            </div>
+          ) : (
+            <div>
+              <IoSunny />
+            </div>
+          )}
         </div>
       </div>
     </section>

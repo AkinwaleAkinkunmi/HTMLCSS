@@ -6,8 +6,13 @@ const url = "https://fakestoreapi.com/products";
 
 const ProductSectionOne = () => {
   const [products, setProducts] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
 
+  async (params) => {
+    
+  }
   const fetchProduct = async () => {
+    setIsLoading(true);
     const response = await fetch(url, {
       method: "GET",
       headers: {
@@ -16,6 +21,7 @@ const ProductSectionOne = () => {
     });
 
     const data = await response.json();
+    setIsLoading(false);
     setProducts(data);
   };
 
@@ -25,22 +31,30 @@ const ProductSectionOne = () => {
 
   console.log("This is my data", products);
   return (
-    <div>
-      {products.map((product) => (
-        <div>
-          <Image
-            className="w-[30%]"
-            src={product.image}
-            unoptimized={true}
-            width={0}
-            height={0}
-          />
-          <h2>{product.title}</h2>
-          <p>{product.description}</p>
-          <p>Price: ${product.price}</p>
-          <button>Add to Cart</button>
+    <div className="pt-40 h-screen">
+      {isLoading === true ? (
+        <div className="text-center flex justify-center items-center h-screen">
+          <span class="loader"></span>
         </div>
-      ))}
+      ) : (
+        <>
+          {products.map((product) => (
+            <div>
+              <Image
+                className="w-[30%]"
+                src={product.image}
+                unoptimized={true}
+                width={0}
+                height={0}
+              />
+              <h2>{product.title}</h2>
+              <p>{product.description}</p>
+              <p>Price: ${product.price}</p>
+              <button>Add to Cart</button>
+            </div>
+          ))}
+        </>
+      )}
     </div>
   );
 };
